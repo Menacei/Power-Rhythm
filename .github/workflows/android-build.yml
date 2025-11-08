@@ -39,3 +39,13 @@ jobs:
           name: PowerAndRhythm-release
           path: android/app/build/outputs/bundle/release/app-release.aab
 
+- name: Build Android Release APK
+- name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: PowerAndRhythm-APK
+          path: android/app/build/outputs/apk/release/app-release.apk
+        run: |
+          cd android
+          ./gradlew clean
+          ./gradlew assembleRelease
