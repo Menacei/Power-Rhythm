@@ -9,6 +9,8 @@ import CommunityScreen from './src/screens/CommunityScreen';
 import ChatScreen from './src/screens/ChatScreen';
 import LiveCoachScreen from './src/screens/LiveCoachScreen';
 import AnalyticsScreen from './src/screens/AnalyticsScreen';
+import LeaderboardScreen from './src/screens/LeaderboardScreen';
+import PremiumScreen from './src/screens/PremiumScreen';
 
 const Stack = createStackNavigator();
 
@@ -24,6 +26,8 @@ export default function App() {
         <Stack.Screen name="Chat" component={ChatScreen} />
         <Stack.Screen name="LiveCoach" component={LiveCoachScreen} />
         <Stack.Screen name="Analytics" component={AnalyticsScreen} />
+        <Stack.Screen name="Leaderboard" component={LeaderboardScreen} />
+        <Stack.Screen name="Premium" component={PremiumScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
