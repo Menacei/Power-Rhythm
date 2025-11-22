@@ -40,12 +40,32 @@ export default function Dashboard({ navigation }) {
         </TouchableOpacity>
       )}
 
+      {/* Premium Banner */}
+      <TouchableOpacity 
+        onPress={() => navigation.navigate('Premium')}
+        className="mx-4 mt-4 bg-gradient-to-r from-indigo-600 to-purple-600 p-4 rounded-2xl flex-row items-center"
+        style={{ backgroundColor: '#4f46e5' }}
+      >
+        <Text className="text-4xl mr-3">👑</Text>
+        <View className="flex-1">
+          <Text className="text-white text-lg font-bold">Upgrade to Premium</Text>
+          <Text className="text-indigo-200 text-sm">Unlock all features & global leaderboard</Text>
+        </View>
+        <Text className="text-white text-2xl">→</Text>
+      </TouchableOpacity>
+
       {/* Quick Actions */}
       <ScrollView 
         horizontal 
         showsHorizontalScrollIndicator={false}
         className="px-4 py-4"
       >
+        <TouchableOpacity 
+          onPress={() => navigation.navigate('Leaderboard')}
+          className="bg-amber-600 px-6 py-3 rounded-xl mr-3"
+        >
+          <Text className="text-white font-semibold">🏆 Leaderboard</Text>
+        </TouchableOpacity>
         <TouchableOpacity 
           onPress={() => navigation.navigate('LiveCoach')}
           className="bg-indigo-600 px-6 py-3 rounded-xl mr-3"
