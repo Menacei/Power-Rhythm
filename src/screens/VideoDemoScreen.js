@@ -22,9 +22,14 @@ export default function VideoDemoScreen({ route, navigation }) {
 
   const enablePiPMode = useCallback(() => {
     setPipMode(true);
-    // In a real implementation, this would trigger native PiP mode
-    // For React Native, you would use react-native-video or similar
-    // with PiP support enabled in native code
+    // Note: This demonstrates PiP UI/UX. For production implementation:
+    // 1. Use react-native-video with PiP support
+    // 2. Enable PiP in iOS (Info.plist: UIBackgroundModes with 'audio')
+    // 3. Enable PiP in Android (AndroidManifest.xml: supportsPictureInPicture)
+    // 4. Call native PiP APIs:
+    //    - iOS: AVPictureInPictureController
+    //    - Android: enterPictureInPictureMode()
+    // YouTube iframe doesn't support native PiP; consider react-native-video for production
   }, []);
 
   return (
