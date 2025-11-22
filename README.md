@@ -11,44 +11,61 @@ An AI-powered fitness application that surpasses BodyBag Pro with comprehensive 
 - **Adaptive Learning**: The AI learns from your progress to provide better recommendations
 
 ### Comprehensive Exercise Library
-The app includes **25 exercises** across multiple categories:
+The app includes **150 exercises** across multiple categories:
 
-#### Boxing (5 exercises)
-- Boxing Fundamentals
-- Heavy Bag Training
-- Speed Bag Workout
-- Boxing Combos & Footwork
-- Boxing Conditioning
+#### Boxing (25 exercises)
+From fundamentals to advanced techniques including:
+- Boxing Fundamentals, Heavy Bag Training, Speed Bag Workout
+- Jab Cross, Hook & Uppercut, Shadow Boxing, Defensive Skills
+- Counter-Punching, Footwork Mastery, Double End Bag
+- Slip & Roll, Power Punching, Ring Movement
+- Combination Flow, Body Shots, Reflex Training
+- And many more specialized boxing workouts
 
-#### Kickboxing (4 exercises)
-- Kickboxing Basics
-- Power Kicks Training
-- Kickboxing Cardio Blast
-- Advanced Kickboxing Combos
+#### Kickboxing (25 exercises)
+Comprehensive kickboxing training including:
+- Kickboxing Basics, Power Kicks, Cardio Blast
+- Roundhouse, Front, Side, and Back Kicks
+- Spinning Techniques, Defense, Low & High Kicks
+- Punch-Kick Combinations, Switch Kicks, Footwork
+- Ring Control, Jumping Kicks, Speed Drills
+- Complete kickboxing conditioning and sparring prep
 
-#### Muay Thai (4 exercises)
-- Muay Thai Fundamentals
-- Clinch & Knee Training
-- Muay Thai Elbow Strikes
-- Muay Thai Fight Conditioning
+#### Muay Thai (25 exercises)
+Traditional and modern Muay Thai training:
+- Muay Thai Fundamentals, Clinch & Knee Training
+- Teep (Push Kick), Thai Pad Combinations
+- Elbow Strikes, Low Kicks, Knee Variations
+- Defensive Techniques, Bag Work, Shadow Work
+- Switch Kicks, Flying Knees, Ring Control
+- Advanced clinch tactics and fighter training
 
-#### Calisthenics (4 exercises)
-- Push-Up Variations
-- Pull-Up Progressions
-- Core Calisthenics
-- Advanced Calisthenics Routine
+#### Calisthenics (25 exercises)
+Bodyweight mastery from basics to advanced:
+- Push-Up & Pull-Up Variations, Core Work
+- Dips, Squats, Planks, Handstands, Muscle-Ups
+- Lunges, Burpees, Front & Back Levers
+- L-Sits, Human Flags, Pistol Squats
+- Explosive Movements, Flow Routines
+- Dynamic calisthenics and strength building
 
-#### HIIT (4 exercises)
-- HIIT for Beginners
-- Tabata Training
-- HIIT Leg Burner
-- Extreme HIIT Challenge
+#### HIIT (25 exercises)
+High-intensity interval training for all levels:
+- Beginner to Elite HIIT protocols
+- Tabata Training, Sprint Intervals, Plyometrics
+- Core, Upper Body, Lower Body, and Full Body HIIT
+- Kettlebell, Battle Rope, Box Jump workouts
+- Burpee Challenges, Fat Burning, Metabolic Boost
+- Power and athletic conditioning
 
-#### Weightlifting (4 exercises)
-- Compound Lifts Basics
-- Upper Body Strength
-- Leg Day Power
-- Olympic Lifting Techniques
+#### Weightlifting (25 exercises)
+Complete strength and power training:
+- Compound Lifts, Olympic Techniques
+- Squats, Deadlifts, Bench Press, Overhead Press
+- Power Cleans, Clean & Jerk, Snatch
+- Front Squats, Romanian Deadlifts, Barbell Rows
+- Incline Press, Sumo Deadlifts, Push Press
+- Power building and elite powerlifting routines
 
 ### YouTube Picture-in-Picture (PiP) Mode
 - Watch workout videos while using other features
@@ -110,7 +127,7 @@ npm start
 ## 📱 Screens
 
 ### Dashboard
-- Browse all 25 workouts
+- Browse all 150 workouts
 - Filter by category (Boxing, Kickboxing, Muay Thai, HIIT, Calisthenics, Weightlifting)
 - Quick access to AI Coach, Analytics, and Community
 - Monthly AI plan notifications
@@ -190,12 +207,13 @@ Key libraries used:
 ## 🎯 Why Better Than BodyBag Pro?
 
 1. **AI Integration**: Monthly personalized plans and real-time coaching
-2. **More Exercise Variety**: 25+ exercises across 6 categories
-3. **Martial Arts Focus**: Specialized training for Boxing, Kickboxing, and Muay Thai
+2. **Massive Exercise Library**: 150 exercises across 6 categories (6x more than competitors)
+3. **Martial Arts Focus**: Specialized training for Boxing, Kickboxing, and Muay Thai with 75 combat exercises
 4. **YouTube PiP**: Watch videos while browsing other content
 5. **Comprehensive Analytics**: Track every aspect of your fitness journey
 6. **Community Features**: Connect and share with other fitness enthusiasts
 7. **Smart Categorization**: Multiple filtering options by type, level, and body area
+8. **Unmatched Variety**: 25 exercises per category ensuring you never get bored
 
 ## 🔄 Monthly Updates
 
