@@ -97,9 +97,10 @@ Exercises target different areas including:
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js (v14 or higher)
+- Node.js (v16 or higher)
 - npm or yarn
 - Expo CLI (optional but recommended)
+- For Android Studio: JDK 17, Android Studio
 
 ### Installation
 
@@ -123,6 +124,35 @@ npm start
 - Install Expo Go on your mobile device
 - Scan the QR code from the terminal
 - Or press `a` for Android emulator, `i` for iOS simulator
+
+## 📱 Android Studio Deployment
+
+For deploying via Android Studio (for production builds or Play Store publishing):
+
+### Quick Start
+```bash
+# Generate Android project
+npm run prebuild:android
+
+# Open android folder in Android Studio
+# Build → Generate Signed Bundle/APK
+```
+
+### Full Guide
+See [ANDROID_DEPLOYMENT.md](./ANDROID_DEPLOYMENT.md) for detailed instructions including:
+- Generating the native Android project
+- Opening and configuring in Android Studio
+- Building debug and release APKs
+- Signing for production
+- Publishing to Google Play Store
+
+### Available Scripts
+```bash
+npm run prebuild:android   # Generate Android native project
+npm run build:android      # Build release APK
+npm run build:android:debug # Build debug APK
+npm run clean:android      # Clean Android build
+```
 
 ## 📱 Screens
 
