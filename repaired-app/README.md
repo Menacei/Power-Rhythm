@@ -1,6 +1,14 @@
-# Welcome to your Expo app 👋
+# Power & Rhythm
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A fitness app built with [Expo](https://expo.dev) and React Native.
+
+## Features
+
+- Cross-platform support (iOS, Android, Web)
+- Modern tab-based navigation
+- Light and dark mode support
+- Parallax scroll effects
+- Haptic feedback on iOS
 
 ## Get started
 
@@ -23,28 +31,83 @@ In the output, you'll find options to open the app in a
 - [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
 - [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Project Structure
 
-## Get a fresh project
+- **app/** - File-based routing screens using Expo Router
+- **components/** - Reusable UI components
+- **constants/** - Theme colors and fonts
+- **hooks/** - Custom React hooks
+- **assets/** - Images and static assets
 
-When you're ready, run:
+## Building for Android (Production)
+
+### Prerequisites
+
+1. Install EAS CLI globally:
+   ```bash
+   npm install -g eas-cli
+   ```
+
+2. Log in to your Expo account:
+   ```bash
+   eas login
+   ```
+
+3. Configure your project (first time only):
+   ```bash
+   eas build:configure
+   ```
+
+### Build APK for Testing
 
 ```bash
-npm run reset-project
+eas build --platform android --profile preview
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Build AAB for Google Play Store
+
+```bash
+eas build --platform android --profile production
+```
+
+### Submit to Google Play Store
+
+1. Create a service account in Google Play Console
+2. Download the JSON key file
+3. Update `eas.json` with the path to your key file
+4. Run:
+   ```bash
+   eas submit --platform android
+   ```
+
+## Building for iOS
+
+```bash
+eas build --platform ios --profile production
+```
+
+## Building for Web
+
+```bash
+npx expo export --platform web
+```
+
+## Google Play Store Requirements
+
+Before submitting to the Play Store, ensure you have:
+
+- [ ] App icon (1024x1024 PNG) - ✅ Configured in `app.json`
+- [ ] Feature graphic (1024x500)
+- [ ] Screenshots for different device sizes
+- [ ] Privacy policy URL
+- [ ] App description and short description
+- [ ] Content rating questionnaire completed
+- [ ] Target API level compliance
 
 ## Learn more
 
 To learn more about developing your project with Expo, look at the following resources:
 
 - [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- [EAS Build documentation](https://docs.expo.dev/build/introduction/): Learn how to build your app for production.
+- [EAS Submit documentation](https://docs.expo.dev/submit/introduction/): Learn how to submit your app to app stores.
