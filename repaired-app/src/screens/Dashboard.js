@@ -1,19 +1,16 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, ScrollView, Image } from 'react-native';
+import { View, Text, TouchableOpacity, ScrollView } from 'react-native';
 import WorkoutCard from '../components/WorkoutCard';
 import { workoutData } from '../utils/workoutData';
+import { Logo } from '../components/Logo';
 
 export default function Dashboard({ navigation }) {
   return (
     <ScrollView className="bg-zinc-900 flex-1 p-4">
       <View className="flex-row justify-between items-center mb-6">
         <View className="flex-row items-center">
-          <Image 
-            source={require('../../assets/logo.jpg')}
-            className="w-12 h-12 rounded-xl mr-3"
-            resizeMode="cover"
-          />
-          <Text className="text-white text-2xl font-bold">Power & Rhythm</Text>
+          <Logo size="small" />
+          <Text className="text-white text-2xl font-bold ml-3">Power & Rhythm</Text>
         </View>
         <TouchableOpacity onPress={() => navigation.navigate('Analytics')}>
           <Text className="text-indigo-400 text-lg">📊 Stats</Text>
