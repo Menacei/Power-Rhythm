@@ -72,9 +72,9 @@ eas build --platform android --profile production
 
 ### Submit to Google Play Store
 
-1. Create a service account in Google Play Console
-2. Download the JSON key file
-3. Update `eas.json` with the path to your key file
+1. Create a service account in Google Play Console ([instructions](https://docs.expo.dev/submit/android/#creating-a-service-account))
+2. Download the JSON key file and save it as `google-service-account.json` in the project root
+3. Add `google-service-account.json` to your `.gitignore` to keep it secure
 4. Run:
    ```bash
    eas submit --platform android
