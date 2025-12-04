@@ -2,6 +2,7 @@
   "expo": {
     "name": "Power & Rhythm",
     "slug": "power-and-rhythm",
+    "owner": "menacei",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
